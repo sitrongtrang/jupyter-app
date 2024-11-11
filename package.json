@@ -1,0 +1,30 @@
+{
+  "name": "jupyter-app",
+  "version": "1.0.0",
+  "description": "DHIS2 Jupyter app",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build": "d2-app-scripts build",
+    "start": "d2-app-scripts start",
+    "demo": "concurrently \"d2-app-scripts start\" \"jupyter notebook --no-browser --port=8888\"",
+    "test": "d2-app-scripts test",
+    "deploy": "d2-app-scripts deploy"
+  },
+  "devDependencies": {
+    "@dhis2/cli-app-scripts": "^11.7.1",
+    "concurrently": "^9.0.1"
+  },
+  "dependencies": {
+    "@dhis2/analytics": "^26.8.2",
+    "@dhis2/app-runtime": "^3.11.0",
+    "@dhis2/app-runtime-adapter-d2": "^1.1.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.9",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}

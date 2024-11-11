@@ -1,0 +1,1 @@
+export default (userId, jupyterId) => `${userId}-${jupyterId}`
